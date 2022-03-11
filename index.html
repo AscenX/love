@@ -71,7 +71,8 @@
         // var start = new Date("2022-03-26 21:00:00") || (new Date('2022-03-26 21:00:00'));
         var start = new Date('2022-03-26 21:00:00');
         var t = (new Date()).getTime() - start.getTime();
-        document.getElementById('d').innerHTML = parseInt(t / 1000 / 60 / 60 / 24);
+        const day = parseInt(t / 1000 / 60 / 60 / 24)
+        document.getElementById('d').innerHTML = day || 0;
       })()
       </script> 
 <!--END：计时器js-->
